@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samuel Aberra || Portfolio website</title>
     <!-- <link rel="stylesheet" href="style.css" /> -->
-    <link rel="stylesheet" href="black.css" />
+    <link rel="stylesheet" href="black.css" id="theme-link" />
     <!-- boxicon css link -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -29,11 +29,9 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="right-header">
-        <!--
-         <a href="#" class="btn"
-          >Let's chat <i class="bx bx-message-dots"></i
-        ></a>
-    -->
+        <button id="theme-toggle" class="toggle-btn"></button>
+        <span class="toggle-label">Dark Mode</span>
+
         <div class="menu-icon">
           <div class="bar"></div>
         </div>
@@ -109,17 +107,18 @@
       <div class="about-img">
         <img src="img/aboutMe.png" alt="" class="aboutHero" />
         <div class="showcase-ring">
-          <img src="shapes/ring.png" class="ring" />
-          <img src="shapes/circle.png" class="circle" />
+          <img src="shapes/ring.png" alt="" class="ring" />
+          <img src="shapes/circle.png" alt="" class="circle" />
         </div>
       </div>
       <div class="about-content">
         <h2 class="heading">About Me</h2>
         <h3>2 Year's Experience on Product Design</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
-          voluptatem autem ex in. Temporibus et maiores ipsum recusandae
-          voluptas consequatur!
+          I have two years of hands-on experience in product design and
+          full-stack development, I craft intuitive interfaces and seamless
+          functionalities for digital products, ensuring captivating user
+          experiences from wireframing to deployment!
         </p>
         <div class="about-btn">
           <button class="active">Main Skills</button>
@@ -152,23 +151,31 @@
               <span>Exceptional coding skills and develoment techniques</span>
             </div>
             <div class="text-box">
-              <p>Hackathons and coding Competiotions</p>
-              <span>Participating in hackathons and coding.</span>
+              <p>Continuous Learning and Development Award</p>
+              <span>Dedicated to ongoing growth and industry awareness.</span>
             </div>
           </div>
 
           <div class="content">
             <div class="text-box">
               <p>Online Courses and Bootcamps</p>
-              <span>Delight the user and make it work.</span>
+              <span
+                >Equipping with skills to delight users and ensure
+                functionality.</span
+              >
             </div>
             <div class="text-box">
               <p>Internships and Work Experience</p>
-              <span>Website , Web Experience , ...</span>
+              <span
+                >Hands-on experience in website and web experience design,
+                ...</span
+              >
             </div>
             <div class="text-box">
               <p>Bachelor's Degree in Informaion System</p>
-              <span>I Like to move it move it</span>
+              <span
+                >Empowering innovation through knowledge and adaptability.</span
+              >
             </div>
           </div>
         </div>
@@ -194,9 +201,9 @@
           </div>
           <h3>App Development</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
-            inventore ea nemo ab recusandae modi voluptates maxime ipsam
-            eveniet. Facilis.
+            Creating intuitive and feature-rich applications to enhance user
+            experiences, utilizing innovative technologies and user-centric
+            design principles.
           </p>
           <a href="#" class="readMore">Read More</a>
         </div>
@@ -208,9 +215,9 @@
           </div>
           <h3>Web Development</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
-            inventore ea nemo ab recusandae modi voluptates maxime ipsam
-            eveniet. Facilis.
+            Crafting dynamic and responsive websites to provide seamless user
+            experiences, incorporating modern design trends and efficient coding
+            practices.
           </p>
           <a href="#" class="readMore">Read More</a>
         </div>
@@ -222,23 +229,23 @@
           </div>
           <h3>UI / UX Design</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
-            inventore ea nemo ab recusandae modi voluptates maxime ipsam
-            eveniet. Facilis.
+            Creating captivating and user-centric interfaces that elevate
+            digital experiences, ensuring seamless navigation and intuitive
+            interaction.
           </p>
           <a href="#" class="readMore">Read More</a>
         </div>
 
         <div class="servicesItem">
           <div class="icon-services">
-            <i class="bx bxs-party"></i>
+            <i class="bx bxs-book-content"></i>
             <span></span>
           </div>
-          <h3>Digital Marketing</h3>
+          <h3>Content Creation</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
-            inventore ea nemo ab recusandae modi voluptates maxime ipsam
-            eveniet. Facilis.
+            Generating compelling and engaging content across various platforms,
+            tailored to target audiences to drive brand awareness and enhance
+            user engagement.
           </p>
           <a href="#" class="readMore">Read More</a>
         </div>
@@ -250,15 +257,15 @@
           <h3>Have a Project On Your Mind</h3>
           <a href="#contact" class="btn">Contact Me</a>
         </div>
-        <img src="img/support.png" class="first" />
+        <img src="img/support.png" alt="" class="first" />
       </div>
 
       <div class="showcase">
-        <img src="shapes/ring.png" class="ring" />
-        <img src="shapes/circle.png" class="circle" />
-        <img src="shapes/circle.png" class="circle2" />
-        <img src="shapes/circle.png" class="circle3" />
-        <img src="shapes/half-ring.png" class="half-ring" />
+        <img src="shapes/ring.png" alt="" class="ring" />
+        <img src="shapes/circle.png" alt="" class="circle" />
+        <img src="shapes/circle.png" alt="" class="circle2" />
+        <img src="shapes/circle.png" alt="" class="circle3" />
+        <img src="shapes/half-ring.png" alt="" class="half-ring" />
       </div>
     </section>
 
@@ -377,9 +384,13 @@
             </div>
             <input type="email" placeholder="Email" />
             <input type="text" placeholder="Subject" />
-            <textarea name="comment" id="" cols="30" rows="10">
-Please write your Message here ...
-            </textarea>
+            <textarea
+              name="comment"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Please Write Your Message here ..."
+            ></textarea>
             <div class="formBtn">
               <button type="submit" class="btn">Send Message</button>
             </div>
@@ -413,7 +424,7 @@ Please write your Message here ...
                       <h2 class="counter"><span data-target="89">0</span>%</h2>
                     </div>
                   </div>
-                  <div class="sk-title">HTML</div>
+                  <div class="sk-title">Web Development</div>
                 </div>
 
                 <div class="skill">
@@ -436,7 +447,7 @@ Please write your Message here ...
                       <h2 class="counter"><span data-target="47">0</span>%</h2>
                     </div>
                   </div>
-                  <div class="sk-title">CSS</div>
+                  <div class="sk-title">App Development</div>
                 </div>
 
                 <div class="skill">
@@ -459,7 +470,7 @@ Please write your Message here ...
                       <h2 class="counter"><span data-target="56">0</span>%</h2>
                     </div>
                   </div>
-                  <div class="sk-title">JavaScript</div>
+                  <div class="sk-title">Content Creation</div>
                 </div>
 
                 <div class="skill">

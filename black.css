@@ -288,13 +288,13 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: animate 1s linear infinite;
+  animation: animate 2s linear infinite;
 }
 
 .img-hero {
   position: relative;
-  animation: floatImage 4s ease-in-out infinite;
-  animation-delay: 3s;
+  animation: floatImage 10s ease-in-out infinite;
+  animation-delay: 6s;
 }
 
 .img-hero img {
@@ -340,7 +340,7 @@ section {
   inset: 0;
   background: var(--gradient-color-bg);
   filter: blur(5px);
-  animation: animate 2s linear infinite;
+  animation: animate 16s linear infinite;
 }
 
 .rotate-text .text {
@@ -350,7 +350,7 @@ section {
   background: #f2f6fb;
   border-radius: 50%;
   box-shadow: 0 1px 6px 5.94px rgba(245, 245, 245, 0.2);
-  animation: rotateText 30s linear infinite;
+  animation: rotateText 100s linear infinite;
 }
 
 .text b {
@@ -737,7 +737,6 @@ button.mixitup-control-active {
 
 .contact-info form input,
 .contact-info form textarea {
-  /* width: 100%; */
   padding: 0.8rem;
   border: 2px solid #e8e1e1;
   margin: 0.5rem 0;
@@ -766,7 +765,6 @@ form textarea:focus {
 form textarea {
   resize: none;
 }
-
 form .btn {
   padding: 15px 20px;
   cursor: pointer;
@@ -865,7 +863,6 @@ footer {
 
 #progress {
   position: fixed;
-  /* background: #194eb9; */
   z-index: 1000;
   bottom: 60px;
   right: 10px;
@@ -1096,4 +1093,33 @@ footer {
     width: 100%;
     padding: 13px;
   }
+}
+/* night and dark mode button  */
+.toggle-label {
+  margin-left: 10px;
+}
+
+.toggle-btn {
+  width: 36px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 13px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-btn::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 14px;
+  height: 14px;
+  background-color: rgba(255, 0, 149, 0.555);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle-btn.active::after {
+  left: 25px;
 }
